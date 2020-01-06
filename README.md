@@ -15,3 +15,9 @@
 * Any stock market ticker available in Yahoo Finance will work with these methods. Here the [SPY](https://github.com/tenaciousR/Time_Series_Prediction_TF/blob/master/spy.csv) csv is first opened and read with the program selecting only the columns in consideration, time (row 0) and close price (row 4). The values are then stored as numpy arrays now, which allows the data to take up less memory when being manipulated.
 * This is then plotted on a simple graph to visualize the full data set. 
  
+![image](https://user-images.githubusercontent.com/55423732/71840325-1d658000-308b-11ea-982e-4e2b091510f7.png)
+
+
+![image](https://user-images.githubusercontent.com/55423732/71840351-29e9d880-308b-11ea-80d7-dd5a1f8a573e.png)
+
+![image](https://user-images.githubusercontent.com/55423732/71840369-353d0400-308b-11ea-90a7-53bdaac15e09.png)
