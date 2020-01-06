@@ -47,7 +47,12 @@
 Orange line is prediction, Blue line is actual values
 ![image](https://user-images.githubusercontent.com/55423732/71840369-353d0400-308b-11ea-90a7-53bdaac15e09.png)
 
+* The **training loss** vs **epochs** can now be plotted, at first glance it seems as though the curve flattens out.
 
+![image](https://user-images.githubusercontent.com/55423732/71842285-4ab42d00-308f-11ea-85b9-7ad61c4cfa1a.png)
+* However, once zoomed in, it is visible that although the curve is fluctiating, it still drops slightly over time. This indicates that more epochs could be useful.
 
+![image](https://user-images.githubusercontent.com/55423732/71842293-4ee04a80-308f-11ea-9c48-413e7db8ca45.png)
 
+### Thank you!
 
