@@ -12,6 +12,7 @@
 
 ## Process
 
+### Data preprocessing 
 * Any stock market ticker available in Yahoo Finance will work with these methods. Here the [SPY](https://github.com/tenaciousR/Time_Series_Prediction_TF/blob/master/spy.csv) csv is first opened and read with the program selecting only the columns in consideration, time (row 0) and close price (row 4). The values are then stored as numpy arrays now, which allows the data to take up less memory when being manipulated.
 * This is then plotted on a simple graph to visualize the full data set. 
  
@@ -24,6 +25,18 @@
 * `batch_size` : the size set for [Stochastic Gradient Descent on TensorFlow](https://www.tensorflow.org/probability/api_docs/python/tfp/optimizer/VariationalSGD).
 * `shuffle_buffer` : shuffles the data in order to prevent bias on learning the training set.
 
+* The model_forecast function includes the parameter `model` which will be returned after training is complete. 
+
+### Neural Network 
+* The initial model is used to plot the **learning rate** vs **loss** in order to visualize the optimal learning rate for the algorithm. The learning rate is selected where the graph begins to level out and has smoother points surrounding it.
+* This model contains roughly the same inputs as the model used for training, the inputs will be explained in the following steps.
 ![image](https://user-images.githubusercontent.com/55423732/71840351-29e9d880-308b-11ea-80d7-dd5a1f8a573e.png)
+
+* The model used for training is a [keras sequential model](https://keras.io/getting-started/sequential-model-guide/).
+* Different neural network methodolies are used within the model, including but not limited to:
+* 1 layer of convolutions
+* 2 layers of LSTM
+* 3 Dense layers (including the final output layer)
+* 1 [lambda layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda?version=stable) to allow quick experimentation
 
 ![image](https://user-images.githubusercontent.com/55423732/71840369-353d0400-308b-11ea-90a7-53bdaac15e09.png)
