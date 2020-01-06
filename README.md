@@ -1,7 +1,7 @@
 # Time Series Prediction using TensorFlow
 
 ## Introduction
-* In this Google Colab notebook [TensorFlow](https://www.tensorflow.org/) and [Keras](https://keras.io/) are used to implement machine learning techniques of [Convolutional Neural Networks](https://www.tensorflow.org/tutorials/images/cnn), Recurrent NN such as [Long Short Term Memory](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM?version=stable), and [Dense Neural Networks](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense?version=stable).
+* In this Google Colab notebook, [TensorFlow](https://www.tensorflow.org/) and [Keras](https://keras.io/) are used to implement machine learning techniques of [Convolutional Neural Networks](https://www.tensorflow.org/tutorials/images/cnn), Recurrent NN such as [Long Short Term Memory](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM?version=stable), and [Dense Neural Networks](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense?version=stable).
 * The goal of this project is to predict the series of values of the SPY index by splitting the data into a training set and validation set to determine accuracy based on [mean absolute error](https://www.tensorflow.org/api_docs/python/tf/compat/v1/metrics/mean_absolute_error).
 * The final steps include plotting the **training** vs **validation** losses per epoch in order to visually represent the accuracy of the system, allowing tweaks to variables such as `window_size` and `batch_size` as well as filters within the keras model. 
 
@@ -28,6 +28,7 @@
 * The model_forecast function includes the parameter `model` which will be returned after training is complete. 
 
 ### Neural Network 
+* The notebook with all the code can be found [here](https://github.com/tenaciousR/Time_Series_Prediction_TF/blob/master/time_series_nn.ipynb).
 * The initial model is used to plot the **learning rate** vs **loss** in order to visualize the optimal learning rate for the algorithm. The learning rate is selected where the graph begins to level out and has smoother points surrounding it.
 * This model contains roughly the same inputs as the model used for training, the inputs will be explained in the following steps.
 
@@ -41,6 +42,11 @@
 * 1 [lambda layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda?version=stable) to allow quick experimentation
 
 * An [optimizer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda?version=stable) using SGD is used and a loss set tothe class [Huber](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Huber?version=stable).
-* The model is then set to run for 500 epochs.
+* The model is then set to run for 500 epochs and 2 functions are created to run the predictions.
 
 ![image](https://user-images.githubusercontent.com/55423732/71840369-353d0400-308b-11ea-90a7-53bdaac15e09.png)
+Orange line is prediction, Blue line is actual values
+
+
+
+
