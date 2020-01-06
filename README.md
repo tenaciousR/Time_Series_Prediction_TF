@@ -12,4 +12,6 @@
 
 ## Process
 
-Stock prediction using TensorFlow; utilizing methods of LSTM, DNN and CNN.
+* Any stock market ticker available in Yahoo Finance will work with these methods. Here the [SPY](https://github.com/tenaciousR/Time_Series_Prediction_TF/blob/master/spy.csv) csv is first opened and read with the program selecting only the columns in consideration, time (row 0) and close price (row 4). The values are then stored as numpy arrays now, which allows the data to take up less memory when being manipulated.
+* This is then plotted on a simple graph to visualize the full data set. 
+ 
