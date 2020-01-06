@@ -44,8 +44,9 @@
 * An [optimizer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda?version=stable) using SGD is used and a loss set tothe class [Huber](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Huber?version=stable).
 * The model is then set to run for 500 epochs and 2 functions are created to run the predictions.
 
-![image](https://user-images.githubusercontent.com/55423732/71840369-353d0400-308b-11ea-90a7-53bdaac15e09.png)
 Orange line is prediction, Blue line is actual values
+![image](https://user-images.githubusercontent.com/55423732/71840369-353d0400-308b-11ea-90a7-53bdaac15e09.png)
+
 
 
 
