@@ -19,10 +19,10 @@
 
 * The data set is then split about 80% train, 20% validation. 
 * The windowed_dataset function allows for the parameters:
-`series` : a portion of the examples in the dataset (x_train or x_validation)
-`window_size` : indicates how many data points to look at in one iteration at a time
-`batch_size` : the size set for [Stochastic Gradient Descent on TensorFlow](https://www.tensorflow.org/probability/api_docs/python/tfp/optimizer/VariationalSGD).
-`shuffle_buffer` : shuffles the data in order to prevent bias on learning the training set.
+* `series` : a portion of the examples in the dataset (x_train or x_validation)
+* `window_size` : indicates how many data points to look at in one iteration at a time
+* `batch_size` : the size set for [Stochastic Gradient Descent on TensorFlow](https://www.tensorflow.org/probability/api_docs/python/tfp/optimizer/VariationalSGD).
+* `shuffle_buffer` : shuffles the data in order to prevent bias on learning the training set.
 
 ![image](https://user-images.githubusercontent.com/55423732/71840351-29e9d880-308b-11ea-80d7-dd5a1f8a573e.png)
 
