@@ -30,13 +30,17 @@
 ### Neural Network 
 * The initial model is used to plot the **learning rate** vs **loss** in order to visualize the optimal learning rate for the algorithm. The learning rate is selected where the graph begins to level out and has smoother points surrounding it.
 * This model contains roughly the same inputs as the model used for training, the inputs will be explained in the following steps.
+
 ![image](https://user-images.githubusercontent.com/55423732/71840351-29e9d880-308b-11ea-80d7-dd5a1f8a573e.png)
 
 * The model used for training is a [keras sequential model](https://keras.io/getting-started/sequential-model-guide/).
-* Different neural network methodolies are used within the model, including but not limited to:
+* Different neural network methods are used within the model, including but not limited to:
 * 1 layer of convolutions
 * 2 layers of LSTM
 * 3 Dense layers (including the final output layer)
 * 1 [lambda layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda?version=stable) to allow quick experimentation
+
+* An [optimizer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda?version=stable) using SGD is used and a loss set tothe class [Huber](https://www.tensorflow.org/api_docs/python/tf/keras/losses/Huber?version=stable).
+* The model is then set to run for 500 epochs.
 
 ![image](https://user-images.githubusercontent.com/55423732/71840369-353d0400-308b-11ea-90a7-53bdaac15e09.png)
